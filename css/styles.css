@@ -13,12 +13,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-    color: #8f8f8f;
+    color: rgb(5, 3, 20);
 }
 
 /* Navigation Bar */
 .navbar {
     padding: 0 0 4.5rem;
+    color: rgb(5, 3, 20);
 
 }
 
@@ -53,8 +54,8 @@ p {
 
 .title-image {
     width: 60%;
-    transform: rotate(25deg);
-    position: absolute;
+    border-radius: 50%;
+    position: flex;
     right: 30%;
 }
 
@@ -80,7 +81,7 @@ p {
 .icon {
     color: #ef8172;
     margin-bottom: 1rem;
-}/
+}
 
 .icon:hover {
     color: #ff4c68;
@@ -88,8 +89,8 @@ p {
 
 /* testimonial section */
 #testimonials {
-    background-color: #ef8172;
-    color: white;
+    background-color: #dbdbff;
+    color: rgb(5, 3, 20);
 
 }
 
@@ -155,10 +156,42 @@ p {
 
 /* Sections */
 .color-section {
-    background-color: #ff4c68;
-    color: white;
+    background-color: #dbdbff;
+    color:  rgb(5, 3, 20);
 }
 
 .white-section {
     background-color: white;
+}
+
+.toggle {
+    background-image: url('../images/toggle.png');
+}
+
+.drawer-toggle {
+    width: 40px;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.drawer-toggle div {
+    width: 90%;
+    height: 3px;
+    background-color: blue;
+}
+
+@media (min-width: 500px) {
+    .drawer-toggle {
+        display: none;
+    }
+}
+
+.navbar-blue{
+    color: blue;
 }
